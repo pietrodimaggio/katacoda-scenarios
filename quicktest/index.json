@@ -1,6 +1,6 @@
 {
-  "title": "Quick test on Minikube",
-  "description": "Quick test on Minikube",
+  "title": "Quick hands on Docker and Minikube",
+  "description": "Quick hands on Docker and Minikube",
   "difficulty": "Beginner",
   "time": "10",
   "details": {
