@@ -9,7 +9,7 @@ Let's create a little image for running an Apache Web Server
 
 2 -Create a “Dockerfile” from the Apache image 
 
-`nano Dockefile` {{execute}}
+`nano Dockefile`{{execute}}
 
 Copy and paste the following into a file named Dockerfile
 
@@ -18,7 +18,7 @@ Copy and paste the following into a file named Dockerfile
 
 3- Build the image by the docker file
 
-`docker build -t my-apache2 .`
+`docker build -t my-apache2 .`{{execute}}
 
 
 
