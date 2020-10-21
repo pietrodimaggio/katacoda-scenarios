@@ -1,6 +1,6 @@
 1 -Start minikube
 
-`minikube start` {{execute}}
+`minikube start`{{execute}}
 
 2 -Create a nginix deployment
 
