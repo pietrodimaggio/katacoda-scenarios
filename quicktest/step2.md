@@ -1,6 +1,6 @@
 1 -Start minikube
 
-`minikube start' {{execute}}
+`minikube start` {{execute}}
 
 2 -Create a nginix deployment
 
@@ -13,17 +13,16 @@
 4- See the deployment state
 `kubectl get deployments`{{execute}}
 
-5- See the deployment state
-`kubectl get deployments`{{execute}}
 
-6- Expose your nginx by LoadBalancer. Now the nginx pool run inside the cluster and is not reachable from the outside.
-Create a service LoadBalancer to expose the nginx.
+
+5- Expose your nginx by LoadBalancer. Now the nginx pod instances run inside the cluster on port 80 and are not reachable from the outside.
+Create a service LoadBalancer to expose the nginx pool.
 `kubectl expose deployment nginx-deployment --type=LoadBalancer`{{execute}}
 
-Now the Kubernetes service nginx-deployment is balancing request between the pods pool
+Now the Kubernetes service nginx-deployment is balancing request on the pods instances
 
 
-7- Check your service LoadBalancer by
+6- Check your service LoadBalancer by
 `kubectl get service`{{execute}}
 
 You'll get something like the following:
@@ -39,6 +38,6 @@ Find the port after the 80:XXXXX
 Click on "+" at the top of the shell and "select port to view on host1"
 Enter port XXXXX, if all is fine you'll see the welcome page
 
-8-Clean up
+7-Clean up
 `kubectl delete service nginx-deployment`{{execute}}
 `kubectl delete deployment nginx-deployment`{{execute}}
