@@ -6,7 +6,7 @@
 
 `kubectl apply -f https://raw.githubusercontent.com/kubernetes/website/master/content/en/examples/controllers/nginx-deployment.yaml`{{execute}}
 
-3 - See the pods creating
+3 - See the pods creating (if nothing is displayed wait 10s and retry ... provisioning can take time)
 
 `kubectl get pods`{{execute}}
 
@@ -19,7 +19,7 @@
 Create a service LoadBalancer to expose the nginx pool.
 `kubectl expose deployment nginx-deployment --type=LoadBalancer`{{execute}}
 
-Now the Kubernetes service nginx-deployment is balancing request on the pods instances
+Now the Kubernetes service nginx-deployment is balancing requests on the pods instances
 
 
 6- Check your service LoadBalancer by
