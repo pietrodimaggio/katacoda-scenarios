@@ -50,10 +50,10 @@ Explore the file system, type "exit" when done.
 `docker container stop my-running-app`{{execute}}
 `docker container start my-running-app`{{execute}}
 
-10-Remove your container, after that you container is gone
+10-Remove your container, after that your container is gone
 `docker container rm --force my-running-app`{{execute}}
 
-11-Your image is still there, docker images are like template for creating containers
+11-Your image is still there, docker images are like templates for creating containers
 `docker image ls my-apache2`{{execute}}
 
 
