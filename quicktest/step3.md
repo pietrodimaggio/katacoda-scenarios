@@ -24,7 +24,7 @@ this will create a db instance
 
 6- Find the MySql pod and delete by the command 
 
-kubectl delete pod <mysql_pod-id>
+kubectl delete pod ***mysql_pod-id**
 
 
 After that the pod lost all its local resources and will be recreate automatically from Kubernetes
