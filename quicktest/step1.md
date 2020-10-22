@@ -13,8 +13,8 @@ Let's create a little image for running an Apache Web Server
 
 Copy and paste the following lines into the nano editor
 
-`FROM httpd:2.4`
-`COPY ./index.html /usr/local/apache2/htdocs/`
+`FROM httpd:2.4`{{execute}}
+`COPY ./index.html /usr/local/apache2/htdocs/`{{execute}}
 
 CTRL+x
 
